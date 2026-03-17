@@ -7,11 +7,12 @@ def plusOne(digits):
             return digits
         digits[i] = 0
         i -= 1
+    digits.insert(0, 1)
     return digits
 
 
 def main():
-    digits = [5,9]
+    digits = [1,2,3,4,5,6,7,8,9]
     plusOne(digits)
     print(digits)
 
