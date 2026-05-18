@@ -1,7 +1,8 @@
 def main():
-    print(maxSlices(5))
-    print(maxSlices(10))
-    print(maxSlices(-100))
+    t = int(input())   # number of test cases
+
+    for i in range(1, t + 1):
+        print(maxSlices(i))
 
 def maxSlices(n):
     n = int(n)

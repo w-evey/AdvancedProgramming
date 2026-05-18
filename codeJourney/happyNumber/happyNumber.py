@@ -1,7 +1,13 @@
 def main():
-    print(isHappy(1)) # true 
-    print(isHappy(19)) # true
-    print(isHappy(4)) # false
+    t = int(input())   # number of test cases
+
+    for i in range(1, t + 1):
+        n = int(input())
+
+        if isHappy(n):
+            print("Case #" + str(i) + ": " + str(n) + " is a Happy number.")
+        else:
+            print("Case #" + str(i) + ": " + str(n) + " is an Unhappy number.")
 
 
 def isHappy(number):
