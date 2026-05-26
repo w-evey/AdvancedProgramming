@@ -20,32 +20,17 @@ def ThreeNPlusOne(n1, n2):
 
 
     
-
 def main():
-    print(ThreeNPlusOne(1, 10))
-    print(ThreeNPlusOne(100, 200))
-    print(ThreeNPlusOne(201, 210))
-    print(ThreeNPlusOne(900, 1000))
+    while True:
+        try:
+            n1, n2 = map(int, input().split())
+
+            result = ThreeNPlusOne(n1, n2)
+
+            print(n1, n2, result)
+
+        except EOFError:
+            break
 
 main()
 
-# for x in range(n1, n2):
-#     if n1 == 1:
-#         return count
-#     else:
-#         if n1 % 2 == 0: # if even
-#             n1 = n1/2
-#             count = count + 1
-#         else: #if odd
-#             n1 = 3 * n1 + 1
-#             count = count + 1
-
-# count = 0
-# while n1 != n2:
-#     if n1 % 2 == 0: # if even
-#         n1 = n1/2
-#         count = count + 1
-#     else: #if odd
-#         n1 = 3 * n1 + 1
-#         count = count + 1
-# return count
